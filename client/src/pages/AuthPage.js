@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react';
 import { useHttp } from '../hooks/http.hook'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext';
+import '../style2.css'
 
 export const AuthPage = () => {
     const auth = useContext(AuthContext)

@@ -1,4 +1,8 @@
 import React from 'react';
+import '../style.css'
+import icon  from './img/default-user-icon.png'
+import button from './img/submit.png'
+
 
 export const ChatPage  = () => {
     return (
@@ -8,17 +12,17 @@ export const ChatPage  = () => {
     </div>
     <div id="conversation-list">
         <div className="conversation">
-           <div className="image"><img src="" alt="Люк Скайуокер"/></div> 
+           <div className="image"><img src={icon} alt="Люк Скайуокер"/></div> 
             <div className="title-text">Люк Скайуокер</div>
         </div>
         <div className="conversation">
-            <div className="image"><img src="" alt="Мастер Йода"/></div>
+            <div className="image"><img src={icon} alt="Мастер Йода"/></div>
             <div className="title-text">Мастер Йода</div>
         </div>
     </div>
 
     <div id="chat-title">
-<div className="imageForhadder"><img src="" alt="Люк Скайуокер" />
+<div className="imageForhadder"><img src={icon} alt="Люк Скайуокер" />
         <span className="titleName">Люк Скайуокер</span> 
     </div>
 </div>
@@ -36,7 +40,7 @@ export const ChatPage  = () => {
         <div id="form">
         <input type="text" placeholder="Ваше сообщение" class="text-form"/>
     <div id="passlogo">
-        <input type="image" src="" class="button" width="50px"/> 
+        <input type="image" src={button} class="button" width="50px"/> 
     </div>
     </div>
     </div>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { useHttp } from '../hooks/http.hook'
 import { Link } from 'react-router-dom'
+import '../style2.css'
 
 
 export const RegPage = () => {
