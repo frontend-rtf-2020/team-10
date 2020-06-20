@@ -1,8 +1,8 @@
 const express = require('express')
 const socket = require('socket.io');
-const http = require('http');
+// const http = require('http');
 
-module.exports = () => {
+module.exports = (http) => {
 
   const io = socket(http);
 
