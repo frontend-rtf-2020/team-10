@@ -12,7 +12,7 @@ const io = createSocket(http);
 
 createRoutes(app, io);
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 8080;
 
 try {
   connect(`${process.env.MONGODB_URI}`, {
